@@ -661,7 +661,7 @@ p {
 .feature-area:after {
   position: absolute;
   content: "";
-  background-image: url("../../assets/img/features/feature-1.jpg");
+  background-image: url("../../assets/img/feature-1.jpg");
   width: 50%;
   height: 100%;
   right: 0;
