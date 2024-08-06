@@ -24,6 +24,68 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- Bootstrap CSS for styling and modal functionality -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   
+    <style>
+      /* Add custom styles here */
+.the-type {
+  width: 80%;
+  margin: 0 auto;
+}
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50px;
+  display: inline;
+  background: linear-gradient(
+    45deg,
+    rgb(0, 143, 104),
+    rgb(172, 51, 233),
+    rgb(250, 224, 66)
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  text-transform: capitalize;
+  /* border-right-style: solid; */
+  border-width: 10px;
+  border-image: linear-gradient(
+      45deg,
+      rgb(0, 143, 104),
+      rgb(172, 51, 233),
+      rgb(250, 224, 66)
+    )
+    1;
+}
+/*One more Css Text Typing*/
+@keyframes typing {
+      0% { width: 0; }
+      50% { width: 100%; }
+      100% { width: 0; }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent; }
+      50% { border-color: rgba(0, 0, 0, 0.7); }
+    }
+
+    .typing-text {
+      display: inline-block;
+      overflow: hidden;
+      border-right: .15em solid transparent;
+      white-space: nowrap;
+      letter-spacing: .15em;
+      animation: typing 4s steps(30, end) infinite, blink-caret .75s step-end infinite;
+      color: rgb(32 146 248); /* RGB color */
+      border-image: linear-gradient(
+        45deg,
+        rgb(0, 143, 104),
+        rgb(172, 51, 233),
+        rgb(250, 224, 66)
+      ) 1;
+      font-size: 2rem; /* Increase font size */
+    }
+        </style>
   </head>
   <body>
     <!-- Header Section -->
@@ -58,9 +120,12 @@
     >
       <div class="container">
         <div class="banner-content">
-          <h4>Welcome to Kurma IT Services</h4>
+          <h4 class=""><span class="typing-text" >Welcome To Kurma IT Services</span></h4>
           <h1>Elevating Business</h1>
-          <h2 class="" style="font-size: 3em;">Efficiency,</h2> <br/>
+          <!-- <div class="the-type">
+            <h2 class="typeing" data-typeingText="The learn Mern Stack developer"></h2>
+          </div> -->
+          <h2 class=" typeing"  data-typeingText="Efficiency"style="font-size: 3em;"></h2><br/>
           <h3 class="home__name" style="font-size: 2.5em;">Empowering Growth</h3>
           <div class="banner-btn">
             <a href="#" class="btn btn-box">Find Out More</a>
@@ -84,61 +149,17 @@
           <div class="about-content">
             <h4>welcome to our website</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
-              corrupti voluptas libero eaque magnam unde sed vitae labore
-              asperiores enim! Sed, perferendis temporibus. Temporibus, porro.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
-              corrupti voluptas libero eaque magnam unde sed vitae labore
-              asperiores enim! Sed, perferendis temporibus. Temporibus, porro.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
-              corrupti voluptas libero eaque magnam unde sed vitae labore
-              asperiores enim! Sed, perferendis temporibus. Temporibus, porro.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
-              corrupti voluptas libero eaque magnam unde sed vitae labore
-              asperiores enim! Sed, perferendis temporibus. Temporibus, porro.
+              At Kurma IT Services, we are passionate about helping businesses achieve their full potential through the implementation and optimization of Enterprise Resource Planning (ERP) solutions. 
+                        With a track record of success and a team of dedicated experts, 
+                        we have been elevating efficiency and empowering growth for organizations of all sizes and industries. 
+                        As a leading provider of ERP consulting services, we specialize in the seamless integration of Infor ERP solutions. 
+                        Our expertise lies in implementing and optimizing Infor LN, Infor CloudSuite, and other cutting-edge Infor software solutions. 
+                        Through our extensive experience and in-depth knowledge of Infor ERP, we enable businesses to unlock their true potential and gain a competitive edge in today's rapidly evolving marketplace.
             </p>
             <a href="" class="btn btn-box">Contact Me</a>
           </div>
           <div class="about-img">
             <img src="assets/img/Kurma IT.jpg" alt="" />
-          </div>
-        </div>
-        <div class="about-bottom">
-          <div class="single-about">
-            <i class="fas fa-american-sign-language-interpreting"></i>
-            <h4>our history</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-              quaerat, animi quas ipsam dolore nam provident. Nulla quisquam
-              alias illum!
-            </p>
-            <a href="">read more</a>
-          </div>
-          <div class="single-about">
-            <i class="fas fa-adjust"></i>
-            <h4>our mission</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-              quaerat, animi quas ipsam dolore nam provident. Nulla quisquam
-              alias illum!
-            </p>
-            <a href="">read more</a>
-          </div>
-          <div class="single-about">
-            <i class="far fa-address-book"></i>
-            <h4>our vision</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-              quaerat, animi quas ipsam dolore nam provident. Nulla quisquam
-              alias illum!
-            </p>
-            <a href="">read more</a>
           </div>
         </div>
       </div>
@@ -246,67 +267,102 @@
         <div class="section-title text-center mb-70">
           <h4>what we do</h4>
           <h2>our services</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit at
-            eos debitis esse perferendis culpa repellat accusantium eligendi
-            blanditiis quaerat.
-          </p>
         </div>
         <div class="services">
           <div class="single-service">
             <i class="far fa-address-book"></i>
-            <h4>web design</h4>
+            <h4 style="font-family:'Times New Roman', Times, serif; font-size: 36px; font-weight: bold; color:rgb(143, 0, 104);">ERP Implementation</h4><br/>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-              totam fugit explicabo aliquid dignissimos amet odio molestiae
-              obcaecati? Atque, quam.
+              We guide you through the process of selecting, customizing, and implementing the right ERP solution for your business.
             </p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#readMoreModal">
+              Read More
+          </button>
           </div>
+          <!-- Modal -->
+<div class="modal fade" id="readMoreModal" tabindex="-1" role="dialog" aria-labelledby="readMoreModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="readMoreModalLabel">ERP Implementation</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+            <h3 class="services__modal-title">System Assessment</h3>
+
+            <p class="services__modal-description">
+                We begin with a comprehensive assessment of your current processes and 
+                systems to determine the best Infor ERP solution for your business.</p>
+
+                <h3 class="services__modal-title">Customization and Configuration</h3>
+
+                <p class="services__modal-description">
+                    Our team will customize and configure Infor ERP to match
+                     your unique workflows and business requirements.</p>
+                
+                    <h3 class="services__modal-title">Data Migration</h3>
+
+                    <p class="services__modal-description">
+                        Safely and efficiently migrate your existing data to 
+                        the new Infor ERP system to ensure a smooth transition.</p>
+
+                        <h3 class="services__modal-title">Testing and Quality Assurance</h3>
+
+                        <p class="services__modal-description">
+                            Rigorous testing and quality assurance procedures are in place to guarantee that your
+                             ERP system is fully functional and error-free.</p>
+
+                            <h3 class="services__modal-title">Training and Support</h3>
+
+                            <p class="services__modal-description">
+                                We provide hands-on training to your team, ensuring they are fully equipped to leverage the Infor ERP system.
+                                Our support continues long after the implementation to address any questions or issues that may arise.</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
           <div class="single-service">
             <i class="fab fa-algolia"></i>
-            <h4>web design</h4>
+            <h4 style="font-family:'Times New Roman', Times, serif; font-size: 36px; font-weight: bold; color:rgb(143, 0, 104);">ERP Optimization</h4><br/>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-              totam fugit explicabo aliquid dignissimos amet odio molestiae
-              obcaecati? Atque, quam.
+              Already using an ERP system? We can fine-tune it for maximum efficiency and performance.
             </p>
+            <button type="button" class="btn btn-primary">
+              Read More
+          </button>
           </div>
+
+          
+
           <div class="single-service">
             <i class="fab fa-alipay"></i>
-            <h4>web design</h4>
+            <h4 style="font-family:'Times New Roman', Times, serif; font-size: 36px; font-weight: bold; color:rgb(143, 0, 104);">Training And Support</h4><br/>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-              totam fugit explicabo aliquid dignissimos amet odio molestiae
-              obcaecati? Atque, quam.
+              Our support doesn't end with implementation. We provide training and ongoing support to ensure you get the most from your ERP system.
             </p>
+            <button type="button" class="btn btn-primary">
+              Read More
+          </button>
           </div>
+
           <div class="single-service">
             <i class="fas fa-american-sign-language-interpreting"></i>
-            <h4>web design</h4>
+            <h4 style="font-family:'Times New Roman', Times, serif; font-size: 36px bold; color:rgb(143, 0, 104);">Development And Integrations</h4><br/>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-              totam fugit explicabo aliquid dignissimos amet odio molestiae
-              obcaecati? Atque, quam.
+              We enhance and integrate Infor ERP systems with custom modules, workflow automation, UI enhancements, advanced reporting, and mobile solutions.
+              We ensure seamless third-party and legacy system integration, unlocking your ERP's full potential for innovation, efficiency, and growth.
             </p>
+            <button type="button" class="btn btn-primary">
+              Read More
+          </button>
+
           </div>
-          <div class="single-service">
-            <i class="fas fa-award"></i>
-            <h4>web design</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-              totam fugit explicabo aliquid dignissimos amet odio molestiae
-              obcaecati? Atque, quam.
-            </p>
-          </div>
-          <div class="single-service">
-            <i class="fas fa-balance-scale"></i>
-            <h4>web design</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-              totam fugit explicabo aliquid dignissimos amet odio molestiae
-              obcaecati? Atque, quam.
-            </p>
-          </div>
+
         </div>
       </div>
     </section>
@@ -321,27 +377,25 @@
           <h4>what we do</h4>
           <h2>our process</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit at
-            eos debitis esse perferendis culpa repellat accusantium eligendi
-            blanditiis quaerat.
+            
           </p>
         </div>
         <div class="process">
           <div class="single-process">
             <h4>design <span></span></h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p></p>
           </div>
           <div class="single-process">
             <h4>development <span></span></h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p></p>
           </div>
           <div class="single-process">
             <h4>testing <span></span></h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p></p>
           </div>
           <div class="single-process">
             <h4>final <span></span></h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p></p>
           </div>
         </div>
       </div>
@@ -349,7 +403,7 @@
     <br/><br/>
     <!-- Process section End -->
     <!-- Counter Section -->
-    <section
+    <!-- <section
       class="counter-area pt-60 pb-60"
       style="background-image: url('assets/img/cta-bg.jpg')"
     >
@@ -374,7 +428,7 @@
         </div>
       </div>
     </section>
-    <br/>
+    <br/> -->
     <!-- Counter Section End -->
 
     <!-- BG Video Section -->
@@ -391,16 +445,12 @@
           ></a>
           <h4>we are awesome</h4>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis
-            perspiciatis magni, ea error rem incidunt quisquam quas accusantium
-            vitae suscipit aliquam, quis voluptatem facilis illo tempore, fugiat
-            consequuntur sed optio.
           </p>
         </div>
       </div>
       
     </section>
-    <br/><br/><br/>
+    <br/><br/>
     <!-- BG Video Section End -->
     <!-- Testimonials Section -->
     <section
@@ -410,136 +460,87 @@
     >
       <div class="container">
         <div class="section-title text-center mb-70">
-          <h4>what we do</h4>
-          <h2>what clients say</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit at
-            eos debitis esse perferendis culpa repellat accusantium eligendi
-            blanditiis quaerat.
-          </p>
+          <h2> My clients</h2>
+          
         </div>
         <div class="testimonials">
           <div class="single-testimonial">
-            <i class="fas fa-quote-left"></i>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-              iure quaerat quisquam enim! Dolorem voluptatibus doloremque
-              necessitatibus neque. Laborum a ducimus aliquid. Tempore dolores
-              maxime quos in exercitationem quis libero?
-            </p>
             <div class="author-info">
-              <img src="assets/img/1.jpeg" alt="" />
-              <h4>john doe <span>web developer</span></h4>
+              <img src="assets/img/Picture1.png" alt="" />
             </div>
           </div>
           <div class="single-testimonial">
-            <i class="fas fa-quote-left"></i>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-              iure quaerat quisquam enim! Dolorem voluptatibus doloremque
-              necessitatibus neque. Laborum a ducimus aliquid. Tempore dolores
-              maxime quos in exercitationem quis libero?
-            </p>
             <div class="author-info">
-              <img src="assets/img/4.jpg" alt="" />
-              <h4>john doe <span>web developer</span></h4>
+              <img src="assets/img/Picture3.png" alt="" />
             </div>
           </div>
           <div class="single-testimonial">
-            <i class="fas fa-quote-left"></i>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-              iure quaerat quisquam enim! Dolorem voluptatibus doloremque
-              necessitatibus neque. Laborum a ducimus aliquid. Tempore dolores
-              maxime quos in exercitationem quis libero?
-            </p>
-            <div class="author-info">
-              <img src="assets/img/5.jpg" alt="" />
-              <h4>john doe <span>web developer</span></h4>
+          
+          <div class="author-info">
+              <img src="assets/img/Picture.png" alt="" />
+              
             </div>
           </div>
-          <div class="single-testimonial">
-            <i class="fas fa-quote-left"></i>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-              iure quaerat quisquam enim! Dolorem voluptatibus doloremque
-              necessitatibus neque. Laborum a ducimus aliquid. Tempore dolores
-              maxime quos in exercitationem quis libero?
-            </p>
-            <div class="author-info">
-              <img src="assets/img/6.jpg" alt="" />
-              <h4>john doe <span>web developer</span></h4>
-            </div>
-          </div>
+          <!-- <div class="single-testimonial">
+          </div> -->
         </div>
       </div>
     </section>
     <!-- Testimonials Section End -->
-    <!-- Blog Section -->
-    <section class="blog-area pt-100 pb-100" id="blog">
-      <div class="container">
-        <div class="section-title text-center mb-70">
-          <h4>what we do</h4>
-          <h2>latest news</h2>
+   <!-- Blog Section -->
+<section class="blog-area pt-100 pb-100" id="blog">
+  <div class="container">
+    <div class="section-title text-center mb-70">
+      <h4>Kurma IT Services</h4>
+      <h2>Why Choose Us?</h2>
+      <p class="highlight-text">
+        Kurma IT Services' mission and passion.
+      </p>
+    </div>
+    <div class="blog">
+      <div class="single-blog">
+        <div class="blog-img">
+          <h4>Experience</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit at
-            eos debitis esse perferendis culpa repellat accusantium eligendi
-            blanditiis quaerat.
+            With years of experience in ERP consulting, we have a deep understanding of the unique challenges and 
+            opportunities that businesses face. Our expertise is your advantage.
           </p>
-        </div>
-        <div class="blog">
-          <div class="single-blog">
-            <div class="blog-img">
-              <img src="assets/img/blog1.jpg" alt="" />
-              <div class="blog-meta">
-                <a href=""><i class="far fa-user"></i> admin</a>
-                <a href=""><i class="far fa-comment"></i> 5 comments</a>
-              </div>
-              <h4>blog title</h4>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
-                assumenda ipsum harum vitae voluptas incidunt praesentium hic
-                saepe cum ratione?
-              </p>
-              <a href="">read more</a>
-            </div>
-          </div>
-          <div class="single-blog">
-            <div class="blog-img">
-              <img src="assets/img/blog2.jpg" alt="" />
-              <div class="blog-meta">
-                <a href="#"><i class="far fa-user"></i> admin</a>
-                <a href="#"><i class="far fa-comment"></i> 5 comments</a>
-              </div>
-              <h4>blog title</h4>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
-                assumenda ipsum harum vitae voluptas incidunt praesentium hic
-                saepe cum ratione?
-              </p>
-              <a href="#">read more</a>
-            </div>
-          </div>
-          <div class="single-blog">
-            <div class="blog-img">
-              <img src="assets/img/blog3.jpg" alt="" />
-              <div class="blog-meta">
-                <a href=""><i class="far fa-user"></i> admin</a>
-                <a href=""><i class="far fa-comment"></i> 5 comments</a>
-              </div>
-              <h4>blog title</h4>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
-                assumenda ipsum harum vitae voluptas incidunt praesentium hic
-                saepe cum ratione?
-              </p>
-              <a href="">read more</a>
-            </div>
-          </div>
+          <a href="">read more</a>
         </div>
       </div>
-    </section>
-    <!-- Blog Section End -->
+      <div class="single-blog">
+        <div class="blog-img">
+          <h4>Dedicated Team</h4>
+          <p>
+            Our team consists of highly skilled professionals who are not only knowledgeable in ERP systems but 
+            also deeply passionate about helping our clients succeed. We are your partners in progress.
+          </p>
+          <a href="#">read more</a>
+        </div>
+      </div>
+      <div class="single-blog">
+        <div class="blog-img">
+          <h4>Tailored Solutions</h4>
+          <p>
+            We understand that one size does not fit all. That's why we work closely with each client to tailor ERP solutions to their specific needs, ensuring the best possible outcomes.
+          </p>
+          <a href="">read more</a>
+        </div>
+      </div>
+      <div class="single-blog">
+        <div class="blog-img">
+          <h4>Client-Centric Approach</h4>
+          <p>
+            We prioritize your goals and objectives. Your success is our success, and we are dedicated to delivering solutions that align with your business's unique vision.
+          </p>
+          <a href="">read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Blog Section End -->
+
     <!-- Subscribe Section -->
     <section
       class="subscribe-area pt-60 pb-60"
@@ -565,10 +566,8 @@
         <div class="section-title text-center mb-70">
           <h4>what we do</h4>
           <h2>contact us</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit at
-            eos debitis esse perferendis culpa repellat accusantium eligendi
-            blanditiis quaerat.
+          <p class="highlight-text">
+            Kurma IT Services' mission and passion.
           </p>
         </div>
         <div class="contact">
@@ -579,11 +578,11 @@
             </div>
             <div class="single-contact">
               <i class="far fa-envelope"></i>
-              <h4>email <span>info@Example.com</span></h4>
+              <h4>email <span>shivamjindal@kurmaitservices.com</span></h4>
             </div>
             <div class="single-contact">
               <i class="fas fa-phone-alt"></i>
-              <h4>phone <span>1234 567 890</span></h4>
+              <h4>phone <span>+31 6 27889720</span></h4>
             </div>
             <div class="single-contact">
               <i class="fas fa-globe-europe"></i>
@@ -624,11 +623,10 @@
         <a href=""><i class="fab fa-twitter"></i></a>
         <a href=""><i class="fab fa-linkedin-in"></i></a>
         <a href=""><i class="fab fa-instagram"></i></a>
-        <p>&copy; 2024 All Rights Reserved.</p>
+       <p> &#169; 2024 Developed & Designed By Gaurav Jain. All rights reserved.</p>
       </div>
     </footer>
     <!-- Footer Section End -->
-
     <!-- jQuery Library -->
     <script src="assets/js/jquery-1.12.min.js"></script>
     <!-- One Page Nav JS -->
@@ -645,5 +643,30 @@
     <script src="assets/js/slick.min.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--Auto Typing Text-->
+    <script>
+      let textType = document.querySelector('.typeing')
+let textArray = textType.dataset.typeingtext.split("")
+let typeCount = 0;
+let autoTypeText = () => {
+    if(typeCount < textType.dataset.typeingtext.length){
+        textType.innerHTML += textType.dataset.typeingtext.charAt(typeCount)
+        typeCount++
+        textArray = textType.dataset.typeingtext.split("")
+    }else {
+        textArray.pop()
+        textType.innerHTML = textArray.join("")
+        if(textArray.length == 0){
+            typeCount = 0
+        }
+    }  
+}
+setInterval(() => {
+    autoTypeText()
+},150)
+
+    </script>
   </body>
 </html>

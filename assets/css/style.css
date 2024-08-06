@@ -602,7 +602,10 @@ p {
   margin-bottom: 15px;
 }
 .about-area .about .about-content p {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-family:'Times New Roman', Times, serif;
+  line-height: 1.5;
 }
 .about-area .about .about-content .btn.btn-box:hover {
   background-color: tomato;
@@ -637,13 +640,13 @@ p {
 .about-area .about-bottom .single-about h4 {
   text-transform: capitalize;
   font-weight: 600;
-  font-size: 26px;
+  font-size: 30px;
   margin: 20px 0;
 }
 .about-area .about-bottom .single-about a {
   color: #ff7720;
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 25px;
   margin-top: 20px;
   display: inline-block;
   transition: 0.3s;
@@ -1076,7 +1079,7 @@ p {
 }
 .testimonials-area .single-testimonial {
   text-align: center;
-  border: 1px solid #f2f2f2;
+  /* border: 1px solid #f2f2f2; */
   padding: 30px;
 }
 .testimonials-area .single-testimonial i {
@@ -1091,8 +1094,8 @@ p {
   margin: 30px auto 0;
 }
 .testimonials-area .single-testimonial .author-info img {
-  max-width: 60px;
-  border-radius: 50%;
+  max-width: 1500px;
+  border-radius: 0%;
   justify-content: center;
 }
 .testimonials-area .single-testimonial .author-info h4 {
@@ -1601,4 +1604,29 @@ p {
 .active-modal {
   visibility: visible;
   opacity: 1;
+}
+
+.services__modal-title,
+.services__modal-description {
+  text-align: center;
+}
+
+.services__modal-title {
+  font-size:large;
+  color:black;
+  margin-bottom: 1rem;
+  font-style:oblique;
+  
+}
+
+.services__modal-description {
+  font-size:medium;
+  margin-bottom: 2rem;
+  color:rgb(143, 0, 104);
+}
+
+/*Why we Choose Us*/
+.highlight-text {
+  font-size: 1.25em; /* Increase the font size as needed */
+  font-weight: bold; /* Optional: Make the text bold */
 }
